@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lirae Diagnostics Chatbot</title>
+	<style>
+        body {
+            background: #004D40;
+            color: #E0F2F1;
+            font-family: 'Trebuchet MS', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            height: 100vh;
+            margin: 0;
+            position: relative;
+        }
+
+        body::before {
+            z-index: -1;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.2;
+            background-image: url("assets/landing-bg.jpg");
+            background-size: contain;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #A7FFEB;
+            color: #000000;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            font-family: 'Trebuchet MS', sans-serif;
+            margin-bottom: 20px;
+        }
+
+        button:hover {
+            background-color: #00BFA5;
+        }
+
+        h1{
+            text-align: center;
+            font-size: 80px;
+        }
+
+        .landing-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .cta {
+            display: flex;
+            gap: 4px;
+        }
+
+        .landing-info {
+            display: flex;
+            padding: 10px 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="landing-container">
+        <h1>Lirae Diagnostics</h1>
+        <div class="landing-info">
+            <div>
+                <p><i>The premier African healthcare diagnostics chatbot...</i></p>
+                <p>
+                    Introducing our revolutionary healthcare diagnostics chatbot, your virtual partner in wellness! 
+                    Say goodbye to long waits and endless forms in crowded waiting rooms. Our chatbot provides instant 
+                    access to personalized health assessments, guiding you through a seamless journey of symptom analysis 
+                    and diagnostic recommendations. Whether you're curious about a pesky cough or seeking advice on managing 
+                    chronic conditions, our chatbot is here to listen, learn, and empower you with accurate insights tailored 
+                    to your needs. With its friendly demeanor and expert knowledge, our chatbot transforms the often intimidating 
+                    world of healthcare into a comforting conversation, ensuring you feel informed and supported every step of the way. 
+                    Welcome to the future of healthcare, where expertise meets accessibility, all in the palm of your hand. Join us on 
+                    this exciting journey towards better health, one chat at a time!
+                </p>
+                <div class="cta">
+                    <button onclick="location.href='/login'">Login</button>
+                    <button onclick="location.href='/register'">Register</button>
+                </div>
+            </div>
+
+            <img src="/assets/landing.png" width="500px" alt="chatbot illustartion">
+        </div>
+    </div>
+</body>
+</html>
